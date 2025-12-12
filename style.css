@@ -4,32 +4,25 @@
     box-sizing: border-box;
 }
 
-.container{
+.container {
     background-color: rgba(25, 25, 25, 0.427);
     height: 100vh;
     width: 100%;
-    position: absolute;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative; /* change from absolute */
 }
 
-.box{
-    margin : 30px 250px;
+.box {
     height: 420px;
     width: 650px;
-    position: absolute;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    z-index: 4;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    background: #ba0909;
-background: linear-gradient(240deg,rgba(186, 9, 9, 1) 0%, rgba(214, 54, 54, 1) 35%, rgba(227, 66, 48, 1) 61%, rgba(255, 104, 87, 1) 84%, rgba(255, 147, 135, 1) 100%);
+    background: linear-gradient(240deg,rgba(186, 9, 9, 1) 0%, rgba(214, 54, 54, 1) 35%, rgba(227, 66, 48, 1) 61%, rgba(255, 104, 87, 1) 84%, rgba(255, 147, 135, 1) 100%);
+    position: relative; /* remove absolute */
+    margin: 0; /* reset margin */
 }
-
 .images{
     position: absolute;
     z-index: 2;
