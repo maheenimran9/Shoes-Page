@@ -10,13 +10,19 @@
     width: 100%;
     position: absolute;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box{
-    margin : 10px 210px;
+    margin : 30px 250px;
     height: 420px;
     width: 650px;
     position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
     z-index: 4;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -315,20 +321,3 @@ html, body {
     height: 100%;
 }
 
-@media only screen and (min-width: 500px){
-    .box{
-        margin: 120px;
-    }
-}
-
-@media only screen and (min-width: 700px){
-    .box{
-        margin: 120px;
-    }
-}
-
-@media only screen and (min-width: 1000px){
-    .box{
-        margin-left: 400px;
-    }
-}
